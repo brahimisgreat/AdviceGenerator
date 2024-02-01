@@ -1,5 +1,6 @@
 import './Home.css'
 import pic from '../assets/images/pause.svg'
+import dice from '../assets/images/icon-dice.svg'
 
 export default function Home() {
   return (
@@ -9,8 +10,10 @@ export default function Home() {
                 Advice #{'117'}
                 <p>{`'it is was to sit up and take notice, what's diffuclt is gettinf up and taking action`}</p>
             </h3>
-            <button>{pic}</button>
+            <button><img src={pic} /></button>
+            
         </div>
+        
     </div>
   )
 }
