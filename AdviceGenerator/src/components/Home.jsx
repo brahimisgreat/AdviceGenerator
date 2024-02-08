@@ -4,6 +4,7 @@ import dice from "../assets/images/icon-dice.svg";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+    useEffect()
   return (
     <div id="home-container">
       <div id="home-kidtainer">
