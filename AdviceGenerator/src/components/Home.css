@@ -8,4 +8,15 @@
 width:21.4375rem;
 border: solid blue;
 min-height: 19.6875rem;
+background-color:#313a48 ;
+display: flex ;
+flex-direction: column;
+gap: 10px;
+justify-content: center;
+align-items: center;
+}
+
+img{
+    background-color:#313a48 ;
+    border: #313a48 solid;
 }
