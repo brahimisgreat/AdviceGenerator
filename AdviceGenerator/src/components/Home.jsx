@@ -6,27 +6,37 @@ import axios from 'axios'
 
 export default function Home() {
   const [advice, setAdvice] = useState({});
+  const [loading, setLoading] = useState(false)
 
-function getData() {
-    axios.get('https://api.adviceslip.com/advice')
-    .then(res => setAdvice(res.data.slip))
-    .catch(err => console.log(err))
+  let pauseNumber = 5000
+
+  function pause () {
+
+  }
+
+ async function getData() {
+     setLoading(true)
+     const response= await fetch('https://api.adviceslip.com/advice')
+     const result = await response.json()
+     console.log(loading)
+     setAdvice(result.slip)
+    setLoading(false)
+    console.log(loading)
 }
 
 
   useEffect(() => {
-    getData()
     setInterval(() => {
-        getData()
-        console.log(advice)
-    }, 20000)
-       
+        getData()  
+        
+        
+    }, pauseNumber)
   }, []);
   return (
     <div id="home-container">
       <div id="home-kidtainer">
         <h3>ADVICE #{advice.id}</h3>
-        <p>{`"${advice.advice}"`}</p>
+        {loading ? <p>loading......</p> :  <p>{`"${advice.advice}"`}</p>}
         <button>
           <img src={pic} />
         </button>
