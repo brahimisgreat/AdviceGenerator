@@ -63,7 +63,7 @@ letter-spacing: -0.257px;
 @media (min-width:768px) {
    #home-container{
     width: 540px;
-    padding: 20px;
+    padding: 0px;
     height: 332px;
    }
    #home-kidtainer{

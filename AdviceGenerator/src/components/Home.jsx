@@ -22,7 +22,7 @@ export default function Home() {
     <div id="home-container">
       <div id="home-kidtainer">
         <h3>ADVICE #{advice.id}</h3>
-        <p>{`"${advice.advice}"`}</p>
+        <p>{`" ${advice.advice}"`}</p>
         <img src={pic} />
       </div>
       <div className="dice" onClick={getData}>
