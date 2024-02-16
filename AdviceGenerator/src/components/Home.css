@@ -19,8 +19,7 @@
 }
 
 img {
-  background-color: #313a48;
-  border: #313a48 solid;
+  background-color: transparent;
 }
 
 h3 {
@@ -45,14 +44,34 @@ line-height: normal;
 letter-spacing: -0.257px;
 }
 
-button{
-    background-color:#313A48;
-    border: none;
+.dice{
+  position: relative;
+  bottom: 31px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+  
+  
 }
 
-#dice{
-    background-color: transparent;
-    border: none;
-    position: relative;
-    bottom: 31px;
+.dice:hover{
+  box-shadow: 0 0 40px 0 rgba(52, 255, 169, 1);
+  transition: .2s ease-in;
 }
+
+@media (min-width:768px) {
+   #home-container{
+    width: 540px;
+    padding: 0px;
+    height: 332px;
+   }
+   #home-kidtainer{
+    width: 100%;
+   }
+  }
+ 
+
+  
+
+
