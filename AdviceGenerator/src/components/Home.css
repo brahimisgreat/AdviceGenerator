@@ -44,7 +44,7 @@ line-height: normal;
 letter-spacing: -0.257px;
 }
 
-.dice{
+#dice{
   position: relative;
   bottom: 31px;
   border-radius: 50%;
@@ -55,8 +55,8 @@ letter-spacing: -0.257px;
   
 }
 
-.dice:hover{
-  box-shadow: 0 0 40px 0 rgba(52, 255, 169, 1);
+#dice:hover{
+  box-shadow: 0 0 04px 0 rgba(52, 255, 169, 1);
   transition: .2s ease-in;
 }
 
@@ -68,6 +68,9 @@ letter-spacing: -0.257px;
    }
    #home-kidtainer{
     width: 100%;
+   }
+   p{
+    max-width: 444px;
    }
   }
  

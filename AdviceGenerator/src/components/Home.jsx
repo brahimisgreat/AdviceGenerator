@@ -12,7 +12,10 @@ export default function Home() {
     setAdvice(result.slip);
   }
 
+  
+
   useEffect(() => {
+    getData()
     setInterval(() => {
       getData();
     }, 10000);
